@@ -4,8 +4,8 @@ resource "aws_lb" "app1_alb" {
   load_balancer_type = "application"
   security_groups    = [aws_security_group.SalsaSunday--LB01-SG-01.id]
   subnets            = [
-    aws_subnet.public-us-west-1a.id,
-    # aws_subnet.public-us-west-1b.id,
+    # aws_subnet.public-us-west-1a.id,
+    aws_subnet.public-us-west-1b.id,
     aws_subnet.public-us-west-1c.id
   ]
   enable_deletion_protection = false

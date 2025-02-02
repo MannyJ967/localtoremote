@@ -3,7 +3,7 @@ resource "aws_launch_template" "app1_LT" {
   image_id      = "ami-038bba9a164eb3dc1"  
   instance_type = "t2.micro"
 
-  key_name = "MyLinuxBox"
+  # key_name = "MyLinuxBox"
 
   vpc_security_group_ids = [aws_security_group.salsaSunday-TG01-SG01-80.id]
 
